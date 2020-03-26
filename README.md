@@ -1,19 +1,18 @@
 # Crohn’s Disease Severity as a Function of the Microbiome
 
-This repo contains the code to analyze Crohn’s Disease specific data in "Inflammatory Bowel Disease Multi-omics Database”. This database is the largest, most comprehensive datatset on the microbiome of IBD patients, to our knowledge. We only focused on a small set of patients who were diagnosed with Crohn’s disease. 
+This repo contains the code to analyze Crohn’s Disease specific metabolomics data in "Inflammatory Bowel Disease Multi-omics Database”. This database is the largest, most comprehensive dataset on the microbiome of IBD patients, to our knowledge. We only focused on a small set of patients who were diagnosed with Crohn’s disease. In this analysis, we focused on the metabolome profiles of these patients. 
 
 The repo contains two subfolders: Data and Output Files. The end result is a heat map of the metabolomics data from Crohn’s Disease patients.
 
-The raw data that we need for our analysis is included in the repo in the Data folder. Additional data related to this project and more information on the database is provided at https://ibdmdb.org. This dataset is well-curated and has undergone initial processing. It can be downloaded directly from the website as a .tsv file. We opened these files using numbers and converted them to .csv files which are included in the Data folder. You can open the data sets in Excel, but they are very large and will likely take a long time to open.
+The raw data that we need for our analysis is included in the repo in the Data folder. Additional data related to this project and more information on the database is provided at https://ibdmdb.org. These datasets are well-curated and have undergone initial processing. They can be downloaded directly from the website as a .tsv file. We opened these files using Numbers and converted them to .csv files which are included in the Data folder. You can open the data sets in Excel, but they are very large and will likely take a long time to open.
 
-The subfolder Output Files is currently empty, and will get
-populated with the results from the Python file.
+The subfolder Output Files is currently empty, and will get populated with the results from the Python file.
 
 # Downloading Git Hub File
 
 The repo includes a Python file which you can run to create the designated heat map. All large files are stored using git-lfs which should be used when working with data sets that are larger than 500 Mb. 
 
-The data cannot be downloaded as a zip file because of the git-lfs structure.
+Note that the data cannot be downloaded as a zip file because of the git-lfs structure. You must use git lfs fetch or git lfs pull to pull the appropriate data.
 
 ## Installing
 
