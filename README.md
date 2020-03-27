@@ -1,12 +1,12 @@
 # Crohn’s Disease Severity as a Function of the Microbiome
 
-This repo contains the code to analyze Crohn’s Disease specific metabolomics data in "Inflammatory Bowel Disease Multi-omics Database”. This database is the largest, most comprehensive dataset on the microbiome of IBD patients, to our knowledge. We only focused on a small set of patients who were diagnosed with Crohn’s disease. In this analysis, we focused on the metabolome profiles of these patients. 
+This repo contains the code to analyze Crohn’s Disease specific metabolomics data in "Inflammatory Bowel Disease Multi-omics Database”. This database is the largest, most comprehensive dataset on the microbiome of IBD patients, to our knowledge. We only focused on a small set of patients who were diagnosed with Crohn’s disease. In this analysis, we focused specifically on the metabolome profiles of these patients. The dataset also includes genomic and transcriptomic information that could be used in further analysis.
 
 The repo contains two subfolders: Data and Output Files. The end result is a heat map of the metabolomics data from Crohn’s Disease patients.
 
 The raw data that we need for our analysis is included in the repo in the Data folder. Additional data related to this project and more information on the database is provided at https://ibdmdb.org. These datasets are well-curated and have undergone initial processing. They can be downloaded directly from the website as a .tsv file. We opened these files using Numbers and converted them to .csv files which are included in the Data folder. You can open the data sets in Excel, but they are very large and will likely take a long time to open.
 
-The subfolder Output Files is currently empty, and will get populated with the results from the Python file.
+The subfolder Output Files is currently filled with three sample data files (one with the figure and two .csv files containing processed data). These will get re-populated with the results from the Python file if you download and run the Python script on your own.
 
 # Downloading Git Hub File
 
@@ -49,7 +49,7 @@ The Supplementary Files, Figures, and Tables are in the `OutputFiles/` folder.
 
 * metabs_by_hbi_heatmap.png is our final figure. This figure shows the metabolites according to the HBI of the appropriate patient. We calculated the z score for the relative abundance of each metabolite for each patient and then ordered the patients by HBI. The heat map is z-scored by column.  
 * sort_collate_metabolomics_zscore.csv is a processed version of the data that only includes patient’s with Crohn’s disease and the z score associated with specific metabolites. We calculated the z score for the relative abundance of each metabolite for each patient. 
-* sort_collate_metabolomics.csv is a processed version of the metabolomics data set that only includes patients with Crohn’s disease who have an associated HBI score in their metadata. With this subset of patients, we pulled the patient metabolomic relative abundance data for further processing.
+* sort_collate_metabolomics.csv is a processed version of the metabolomics data set that only includes patients with Crohn’s disease who have an associated HBI score in their metadata. With this subset of patients, we pulled the patient metabolomic relative abundance data for further processing. The x axis includes the specific metabolites, the y axis includes the patient number and the information within the cell contains the relative abundance of the specific metabolite for that individual patient.
 
 # References
 
