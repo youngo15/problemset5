@@ -1,3 +1,5 @@
 hmp2_metadata.csv filter=lfs diff=lfs merge=lfs -text
 heat_map_metabolites.py filter=lfs diff=lfs merge=lfs -text
 HMP2_metabolomics.csv filter=lfs diff=lfs merge=lfs -text
+*.csv filter=lfs diff=lfs merge=lfs -text
+*.png filter=lfs diff=lfs merge=lfs -text
